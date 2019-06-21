@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Module 11 - Portfolio</title>
+	<!-- Appel CSS -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--Perso JS -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/chart.js"></script>
+</head>
+<body>
+	<!--HEADER-->
+	<header class="container">
+		<a href="index.html"><img src="img/logo.svg" alt="logo de mon portfolio" /> John Doe</a>
+		<nav>
+			<a href="index.html"><i class="fa fa-home"></i> Accueil</a>
+			<a href=""><i class="fa fa-folder-open"></i> Réalisations</a>
+			<a href=""><i class="fa fa-envelope"></i> Contact</a>
+		</nav>
+	</header>
+	<!--MAIN CONTENT-->
+	<main>
+		<section id="presentation">
+			<div class="cover">
+				<div class="container">
+					<h1>Bonjour et bienvenue sur mon portfolio</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a class="cta" href="#">Découvrez-moi !</a>
+				</div>
+			</div>
+		</section>
+		<section id="canvas" class="container">
+			<h2>Mes compétences</h2>
+			<canvas id="product" width="800" height="300"></canvas>
+			<script>
+			var data = [
+				{
+					value: 60,
+					color:"#f3453c",
+					highlight: "#FF5A5E",
+					label: "HTML"
+				},
+				{
+					value: 50,
+					color: "#f4813a",
+					highlight: "#fc9e67",
+					label: "CSS"
+				},
+				{
+					value: 40,
+					color: "#f5ae28",
+					highlight: "#FFC870",
+					label: "JS"
+				}
+			]
+			var myDoughnutChart = new Chart(document.getElementById("product").getContext("2d")).Doughnut(data, {segmentShowStroke : false});
+			</script>
+		</section>
+		<section id="realisation" class="container">
+			<h2>Mes réalisations</h2>
+			<div class="column">
+				<div class="column">
+					<i class="fa fa-coffee"></i>
+					<h2>On discute</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="column">
+					<i class="fa fa-flask"></i>
+					<h2>On tente</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div class="column">
+					<i class="fa fa-code"></i>
+					<h2>On code</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</section>
+		<section id="resume" class="container">
+			<h2>Quelques exemples de réalisations</h2>
+			<div class="clear">
+				<h3>Orange Juice :</h3>
+				<img src="img/real/1.png" alt="" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="#">En savoir plus <i class="fa fa-plus-circle"></i></a>
+			</div>
+			<div class="clear">
+				<h3>Time Past :</h3>
+				<img src="img/real/2.png" alt="" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="#">En savoir plus <i class="fa fa-plus-circle"></i></a>
+			</div>
+			<div class="clear">
+				<h3>Aqua Plant :</h3>
+				<img src="img/real/3.png" alt="" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href="#">En savoir plus <i class="fa fa-plus-circle"></i></a>
+			</div>
+		</section>
+		<section id="contact" class="container">
+			<h2>Contactez-moi</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<form>
+				<input type="text" name="name" placeholder="Votre prénom">
+				<input type="text" name="mail" placeholder="Votre mail">
+				<textarea name="message" rows="1" placeholder="Votre message"></textarea>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
